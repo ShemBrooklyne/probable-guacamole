@@ -139,3 +139,23 @@ if rating > 9.5 {
     print("No redemption for you dude")
 }
 
+/**
+ * Working with For Loops
+ */
+
+let allStars = ["Ja Morant", "Kyrie Irving", "Lebron James", "Stephen Curry", "West Brook"]
+
+//iterate over allStars array
+for player in allStars { //prints in order, arrays are ordered
+    print(player)
+}
+
+var randomInts: [Int] = []
+
+//define range to iterate all through from 0 - 10
+for _ in 0..<11 {
+    let randomNumbers = Int.random(in: 0...100) //define random int to be generated from 0 - 100
+    randomInts.append(randomNumbers) //append defined empty int array with new generated random ints
+}
+
+print(randomInts)
