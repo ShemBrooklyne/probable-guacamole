@@ -103,3 +103,39 @@ func add(firstNumber: Int, to secondNumber: Int) -> Int {
 //parameter label used in scope
 add(firstNumber: 24, to: 16)
 
+
+/**
+ * Working with Conditional statements
+ */
+
+//use of inferencing to define boolean
+var isDarkModeOn = false
+
+//first statement in condition defaults to true
+if isDarkModeOn { //prints only if condition is met.
+    print("Lol! Just like ya'll hearts!")
+} else {
+    print("You have purpose.")
+}
+
+var myHighScore = 320
+var yourHighScore = 318
+
+if myHighScore > yourHighScore {
+    print("I win")
+} else {
+    print("You win")
+}
+
+var rating = 5.5
+
+if rating > 9.5 {
+    print("You rock!")
+} else if rating > 7 {
+    print("You are awesome")
+} else if rating < 6.5 {
+    print("Pls work on yourself!")
+} else {
+    print("No redemption for you dude")
+}
+
