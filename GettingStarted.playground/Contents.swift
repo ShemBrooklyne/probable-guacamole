@@ -52,8 +52,25 @@ var randIntArr = [23, 47, 82, 91, 13, 25, 54, 73, 47, 25]
 var randIntSet = Set(randIntArr) //omits duplicates in existing array
 
 randIntSet.contains(91) //constant time lookup no matter the size of the array //hashable
-randIntSet.insert(100) //unordered - no duplicates - high performance 
+randIntSet.insert(100) //unordered - no duplicates - high performance
 
 print(randIntSet)
+
+/**
+ * Working with Dictionary (Key - Value pair)
+ */
+
+//defining a dictionary with key and value
+let devices: [String: String] = [
+    "phone" : "Samsung A72",
+    "laptop" : "Lenovo Thinkpad T450",
+    "headset" : "JBL Tune 510",
+    "desktop" : "HP Pavilion Gaming"
+]
+
+print(devices) //prints the whole dictionary
+
+//access dictionary value using key
+devices["laptop"] //constant time look up bcoz we already have the key
 
 
