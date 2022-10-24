@@ -74,3 +74,32 @@ print(devices) //prints the whole dictionary
 devices["laptop"] //constant time look up bcoz we already have the key
 
 
+/**
+ * Working with Functions
+ */
+
+//defining a function and it's scope
+func printAuthorsName() {
+    print("Gothboyclique")
+}
+
+printAuthorsName()
+
+//defining a function with parameters
+func printAuthors(name: String) {
+    print(name)
+}
+
+printAuthors(name: "Shem Brooklyne") //takes in param name as string
+
+// -> return (function signature) & to - argument label
+func add(firstNumber: Int, to secondNumber: Int) -> Int {
+    let sum = firstNumber + secondNumber
+    return sum
+}
+
+//argument label can be choice of word depending on how you want your code readable
+
+//parameter label used in scope
+add(firstNumber: 24, to: 16)
+
