@@ -159,3 +159,32 @@ for _ in 0..<11 {
 }
 
 print(randomInts)
+
+
+/**
+ * Working with Enums
+ */
+
+//group of values that are related || grouped together
+enum phone {
+    case Motorolla
+    case Nokia
+    case Samsung
+    case Alcatel
+    case Ericksen
+}
+
+//readable way using comma's to separate value
+enum Phones: String {
+    case Motorolla = "This is a cartel phone",
+         Nokia = "A multipurpose hardware tool which can be used as a hammer",
+         Pixel = "Google's baby",
+         iPhone = "To damn expensive!"
+}
+
+//not sloppy - best practice
+func getUserChoice(on phone: Phones) {
+    print(phone.rawValue) //defined enums have raw values. I hope you see that
+}
+
+getUserChoice(on: .Motorolla)
